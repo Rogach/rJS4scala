@@ -1,7 +1,8 @@
 Remote JavaScript console for Scala apps
 ========================================
 
-=== Installation ===
+Installation
+------------
 
 In sbt:
 
@@ -13,7 +14,8 @@ libraryDependencies += "org.rogach" % "rjs4scala" % "0.1"
 
 Or you can download jar manually from https://github.com/Rogach/org.rogach/raw/master/org/rogach/rjs4scala/0.1/rjs4scala-0.1.jar
 
-=== Example ===
+Example
+-------
 
 Start an endpoint from your application:
 
