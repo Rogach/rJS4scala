@@ -35,12 +35,15 @@ and access it (via telnet, nc, ..):
 > nc localhost 8093
 1 + 2
 3
+someObj.a()
+5
+someObj.doSmth() // "A" would be printed on the server output
 ```
 
 In case you don't like JavaScript, you can provide your own handler:
 
 ```scala
-val myHandler: String => Some[String] = line => line.toInt * 2
+val myHandler: String => Some[String] = line => Some(line.toInt * 2)
 org.rogach.misc.Rjs.endpoint(port = 8093, handler = myHandler)
 ```
 
