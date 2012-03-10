@@ -7,7 +7,7 @@ Installation
 In sbt:
 
 ```
-resolvers += "s4gnuplot gihub maven repo" at "https://github.com/Rogach/org.rogach/raw/master/"
+resolvers += "Rogach's maven repo" at "https://github.com/Rogach/org.rogach/raw/master/"
 
 libraryDependencies += "org.rogach" % "rjs4scala" % "0.1"
 ```
