@@ -49,3 +49,15 @@ org.rogach.misc.Rjs.endpoint(port = 8093, handler = myHandler)
 
 To end the conversation from that handler, just throw org.rogach.misc.Rjs.ConversationEnded.
 
+persistent-connect.rb
+---------------------
+
+Also I wrote up a simple script, that connects to the given port and reconnects every time your application is restarted.
+
+Together with sbt-revolver plugin, it allows for super-fast turnaround - you hit "save" in your editor -> sbt recompiles & restarts -> app opens a port -> persistent-connect.rb connects to the port, sends some commands -> when you reach for your app, it has already done something useful.
+
+Usage:
+
+```
+./persistent-connect.rb port [ commands to run ]
+```
