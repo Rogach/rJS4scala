@@ -9,10 +9,10 @@ In sbt:
 ```
 resolvers += "Rogach's maven repo" at "https://github.com/Rogach/org.rogach/raw/master/"
 
-libraryDependencies += "org.rogach" % "rjs4scala" % "0.1"
+libraryDependencies += "org.rogach" %% "rjs4scala" % "0.1.1"
 ```
 
-Or you can download jar manually from https://github.com/Rogach/org.rogach/raw/master/org/rogach/rjs4scala/0.1/rjs4scala-0.1.jar
+rjs4scala is cross-built for 2.9.x.
 
 Example
 -------
@@ -59,5 +59,5 @@ Together with sbt-revolver plugin, it allows for super-fast turnaround - you hit
 Usage:
 
 ```
-./persistent-connect.rb port [ commands to run ]
+./persistent-connect.rb port ["commands-to-run"]
 ```

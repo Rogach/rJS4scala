@@ -2,7 +2,7 @@ import AssemblyKeys._
 
 name := "rjs4scala"
 
-version := "0.1"
+version := "0.1.1"
 
 scalaVersion := "2.9.1"
 
@@ -18,8 +18,8 @@ seq(assemblySettings: _*)
 
 resolvers += "Scala Tools Snapshots" at "http://scala-tools.org/repo-snapshots/"
 
-libraryDependencies ++= Seq(
-  "org.scalaz" %% "scalaz-core" % "6.0.4"
-)
+crossScalaVersions := Seq("2.9.0", "2.9.0-1", "2.9.1", "2.9.1-1")
+
+unmanagedClasspath in Compile += file("dummy")
 
 //mainClass in assembly := Some("main.class")
